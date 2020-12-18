@@ -8,7 +8,7 @@
         font-family: AmazonEmber;
     }
     html{
-        scroll-behavious: smooth;
+        scroll-behaviour: smooth;
     }
     html a:hover {
         text-decoration: none;
