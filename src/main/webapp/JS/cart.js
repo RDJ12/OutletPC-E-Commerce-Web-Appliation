@@ -63,7 +63,7 @@ const addToCart = (id, name, discount, price, image) => {
         let productData = {productId: id, productName: name, productDiscount: discount, productPrice: price, productImage: image, productQuantity: 1};
         products.push(productData);
         localStorage.setItem("cart", JSON.stringify(products));
-        successCart("Successully Added");
+        successCart("Successfully Added");
     } else {
         let products = JSON.parse(cart);
         let oldProduct = products.find((item) => item.productId === id);
@@ -79,7 +79,7 @@ const addToCart = (id, name, discount, price, image) => {
                     }
                 });
                 localStorage.setItem("cart", JSON.stringify(products));
-                successCart("Successully Added");
+                successCart("Successfully Added");
             } else {
                 errorCart("You can purchase 5 units only");
             }
@@ -87,7 +87,7 @@ const addToCart = (id, name, discount, price, image) => {
             let productData = {productId: id, productName: name, productDiscount: discount, productPrice: price, productImage: image, productQuantity: 1};
             products.push(productData);
             localStorage.setItem("cart", JSON.stringify(products));
-            successCart("Successully Added");
+            successCart("Successfully Added");
         }
     }
     updateData();
